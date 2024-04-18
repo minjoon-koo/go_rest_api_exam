@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:5.7  # MySQL 버전은 필요에 따라 변경 가능
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: sldtsre  # 이 예제에서는 root 비밀번호도 제공
+      MYSQL_DATABASE: SALES_API_DB
+      MYSQL_USER: sldtsre
+      MYSQL_PASSWORD: sldtsre
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
