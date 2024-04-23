@@ -4,7 +4,7 @@
 ### version info
 ```
 go : go1.22.1
-fiber : v3.0.0-beta.2
+fiber : 2.52.4-beta.2
 gorm.io : v1.25.9
 godotenv : v1.5.1
 ```
